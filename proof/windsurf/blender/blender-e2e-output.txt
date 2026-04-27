@@ -1,4 +1,4 @@
-CMD: C:\Program Files\Blender Foundation\Blender 3.6\blender.exe --background --python C:\Users\Admin\AppData\Local\Temp\tmpice07x84.py -- output\blender\test_input.stl output\blender\test_repaired_0.stl proof\windsurf\blender\blender-repair-result.json
+CMD: C:\Program Files\Blender Foundation\Blender 3.6\blender.exe --background --python C:\Users\Admin\AppData\Local\Temp\tmpf6mb77zf.py -- output\blender\test_input.stl output\blender\test_repaired_0.stl proof\windsurf\blender\blender-repair-result.json
 
 STDOUT:
 Blender 3.6.5 (hash cf1e1ed46b7e built 2023-10-19 01:09:47)

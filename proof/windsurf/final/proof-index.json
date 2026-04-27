@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-27T02:39:11.742156+00:00",
+  "timestamp": "2026-04-27T03:04:25.788296+00:00",
   "total_proof_files": 21,
   "required_files_present": 17,
   "required_files_missing": 7,
@@ -16,17 +16,17 @@
     {
       "path": "proof\\blender\\blender-e2e-test.json",
       "size_bytes": 953,
-      "sha256": "e0ff81da3d97fc80b9bd8da645ae7f320e5767e1c7cc7514566ca989a8224697"
+      "sha256": "ccc248a3131bb5e7ae5554ce7e76ec7bc74bf513d022945a199f9ede07f74817"
     },
     {
       "path": "proof\\router\\router-validation.json",
       "size_bytes": 9231,
-      "sha256": "02dba7ed2b7130990ddb6a06b942dcc548840c132c21a8dd12232724bb835009"
+      "sha256": "5891a59d58482813aeea147adbee53521e669bf693417e5f32dab858e055bb83"
     },
     {
       "path": "proof\\safety\\safety-gate-test.json",
       "size_bytes": 842,
-      "sha256": "b266e982bd170c13f75349846cc3f05309eea6933c258d58624359debc0b409b"
+      "sha256": "ad6132486be29a62ecaba25141e44ada27cb927b9a8502a1981ad4c9489899af"
     },
     {
       "path": "proof\\windsurf\\baseline\\git-status-before.txt",
@@ -41,12 +41,12 @@
     {
       "path": "proof\\windsurf\\blender\\blender-e2e-output.json",
       "size_bytes": 953,
-      "sha256": "e0ff81da3d97fc80b9bd8da645ae7f320e5767e1c7cc7514566ca989a8224697"
+      "sha256": "ccc248a3131bb5e7ae5554ce7e76ec7bc74bf513d022945a199f9ede07f74817"
     },
     {
       "path": "proof\\windsurf\\blender\\blender-e2e-output.txt",
       "size_bytes": 506,
-      "sha256": "60664dbebda7b4b114ce32ab43f4608de41992ac6d4d225006cf7cbe2ab8a280"
+      "sha256": "53c375bfc9bfc40d526637c420eb4a6ae7fa03d493e8df97b6c536c82e95c3a6"
     },
     {
       "path": "proof\\windsurf\\blender\\blender-repair-result.json",
@@ -70,8 +70,8 @@
     },
     {
       "path": "proof\\windsurf\\comfyui\\comfyui-health.json",
-      "size_bytes": 206,
-      "sha256": "5e8ddb3ffc9bdc5eda01a29735d660da575e287cc2c4100d95b66ae67d664f9f"
+      "size_bytes": 960,
+      "sha256": "27b596f153cb6aaf11fcc025a93d471059a2c9c56fdaf4fc39725a8e54d56eae"
     },
     {
       "path": "proof\\windsurf\\comfyui\\comfyui-location.txt",
@@ -85,8 +85,8 @@
     },
     {
       "path": "proof\\windsurf\\comfyui\\hunyuan3d-shape-test.json",
-      "size_bytes": 5025,
-      "sha256": "f4dbec772999bf63ec4100dfa39a5b1f2dcd75d46baf3b67ce4bc488957c6f6e"
+      "size_bytes": 4947,
+      "sha256": "c075e23ecf21d3f69ea6fca8a166e1c9d307243906b12bbc84ec0b5da97b6c8a"
     },
     {
       "path": "proof\\windsurf\\comfyui\\vram-policy.md",
@@ -105,18 +105,18 @@
     },
     {
       "path": "proof\\windsurf\\final\\proof-index.json",
-      "size_bytes": 8644,
-      "sha256": "3fd6ec7cddd46c920c9105b3b8da655bfcd227ef9ee3204d0ad0df1bbcdc9564"
+      "size_bytes": 8647,
+      "sha256": "220ca644d69243f2a4a479967adc02dec84cdcc5965bc6896feb5ad238cebad5"
     },
     {
       "path": "proof\\windsurf\\router\\router-validation.json",
       "size_bytes": 9231,
-      "sha256": "02dba7ed2b7130990ddb6a06b942dcc548840c132c21a8dd12232724bb835009"
+      "sha256": "5891a59d58482813aeea147adbee53521e669bf693417e5f32dab858e055bb83"
     },
     {
       "path": "proof\\windsurf\\safety\\safety-gate-test.json",
       "size_bytes": 842,
-      "sha256": "b266e982bd170c13f75349846cc3f05309eea6933c258d58624359debc0b409b"
+      "sha256": "ad6132486be29a62ecaba25141e44ada27cb927b9a8502a1981ad4c9489899af"
     }
   ],
   "required_check": [
@@ -143,7 +143,7 @@
     {
       "required": "proof/windsurf/blender/blender-e2e-output.txt",
       "exists": true,
-      "sha256": "60664dbebda7b4b114ce32ab43f4608de41992ac6d4d225006cf7cbe2ab8a280"
+      "sha256": "53c375bfc9bfc40d526637c420eb4a6ae7fa03d493e8df97b6c536c82e95c3a6"
     },
     {
       "required": "proof/windsurf/blender/output-sha256.txt",
@@ -158,7 +158,7 @@
     {
       "required": "proof/windsurf/comfyui/comfyui-health.json",
       "exists": true,
-      "sha256": "5e8ddb3ffc9bdc5eda01a29735d660da575e287cc2c4100d95b66ae67d664f9f"
+      "sha256": "27b596f153cb6aaf11fcc025a93d471059a2c9c56fdaf4fc39725a8e54d56eae"
     },
     {
       "required": "proof/windsurf/comfyui/hunyuan3d-model-files.txt",
@@ -168,7 +168,7 @@
     {
       "required": "proof/windsurf/comfyui/hunyuan3d-shape-test.json",
       "exists": true,
-      "sha256": "f4dbec772999bf63ec4100dfa39a5b1f2dcd75d46baf3b67ce4bc488957c6f6e"
+      "sha256": "c075e23ecf21d3f69ea6fca8a166e1c9d307243906b12bbc84ec0b5da97b6c8a"
     },
     {
       "required": "proof/windsurf/comfyui/vram-policy.md",
@@ -193,12 +193,12 @@
     {
       "required": "proof/windsurf/router/router-validation.json",
       "exists": true,
-      "sha256": "02dba7ed2b7130990ddb6a06b942dcc548840c132c21a8dd12232724bb835009"
+      "sha256": "5891a59d58482813aeea147adbee53521e669bf693417e5f32dab858e055bb83"
     },
     {
       "required": "proof/windsurf/safety/safety-gate-test.json",
       "exists": true,
-      "sha256": "b266e982bd170c13f75349846cc3f05309eea6933c258d58624359debc0b409b"
+      "sha256": "ad6132486be29a62ecaba25141e44ada27cb927b9a8502a1981ad4c9489899af"
     },
     {
       "required": "proof/windsurf/e2e/full-dryrun-report.md",
@@ -223,17 +223,17 @@
     {
       "required": "proof/blender/blender-e2e-test.json",
       "exists": true,
-      "sha256": "e0ff81da3d97fc80b9bd8da645ae7f320e5767e1c7cc7514566ca989a8224697"
+      "sha256": "ccc248a3131bb5e7ae5554ce7e76ec7bc74bf513d022945a199f9ede07f74817"
     },
     {
       "required": "proof/router/router-validation.json",
       "exists": true,
-      "sha256": "02dba7ed2b7130990ddb6a06b942dcc548840c132c21a8dd12232724bb835009"
+      "sha256": "5891a59d58482813aeea147adbee53521e669bf693417e5f32dab858e055bb83"
     },
     {
       "required": "proof/safety/safety-gate-test.json",
       "exists": true,
-      "sha256": "b266e982bd170c13f75349846cc3f05309eea6933c258d58624359debc0b409b"
+      "sha256": "ad6132486be29a62ecaba25141e44ada27cb927b9a8502a1981ad4c9489899af"
     },
     {
       "required": "proof/moonraker/fleet-scan-4active.json",

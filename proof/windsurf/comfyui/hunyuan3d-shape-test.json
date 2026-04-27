@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-27T02:39:11.702601+00:00",
+  "timestamp": "2026-04-27T03:04:25.725538+00:00",
   "comfyui_found": true,
-  "comfyui_running": false,
+  "comfyui_running": true,
   "hunyuan3d_shape_found": true,
   "hunyuan3d_paint_found": true,
   "shape_model_paths": [
@@ -52,6 +52,6 @@
     "G:\\Github\\ComfyUI\\models\\hunyuan3d\\paint\\hunyuan3d-paintpbr-v2-1\\vae",
     "G:\\Github\\ComfyUI\\models\\hunyuan3d\\paint\\hunyuan3d-vae-v2-1"
   ],
-  "gate": "BLOCKED",
-  "blocker": "BLOCKED_SERVICE \u2014 ComfyUI not running (start manually or via bootstrap)"
+  "gate": "PASS",
+  "blocker": null
 }

@@ -1,6 +1,35 @@
 {
   "url": "http://localhost:8188",
-  "running": false,
-  "status_code": null,
-  "error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  "running": true,
+  "status_code": 200,
+  "error": null,
+  "system_stats": {
+    "system": {
+      "os": "win32",
+      "ram_total": 137352351744,
+      "ram_free": 82684944384,
+      "comfyui_version": "0.3.76",
+      "required_frontend_version": "1.33.10",
+      "installed_templates_version": "0.7.25",
+      "required_templates_version": "0.7.25",
+      "python_version": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+      "pytorch_version": "2.6.0+cu124",
+      "embedded_python": false,
+      "argv": [
+        "main.py",
+        "--listen"
+      ]
+    },
+    "devices": [
+      {
+        "name": "cuda:0 NVIDIA GeForce RTX 3090 Ti : cudaMallocAsync",
+        "type": "cuda",
+        "index": 0,
+        "vram_total": 25756696576,
+        "vram_free": 24411897856,
+        "torch_vram_total": 0,
+        "torch_vram_free": 0
+      }
+    ]
+  }
 }
