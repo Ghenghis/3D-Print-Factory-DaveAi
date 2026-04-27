@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "minimax": {
+      "command": "npx",
+      "args": ["-y", "@minimax-ai/mcp-server"],
+      "env": {
+        "MINIMAX_API_KEY": "${MINIMAX_API_KEY}"
+      },
+      "execute_timeout": 60
+    },
+
+    "comfyui": {
+      "command": "python",
+      "args": ["-m", "mcp.comfyui-mcp"],
+      "env": {
+        "COMFYUI_HOST": "localhost",
+        "COMFYUI_PORT": "8188",
+        "COMFYUI_OUTPUT_DIR": "./output/comfyui"
+      },
+      "execute_timeout": 300
+    },
+
+    "moonraker": {
+      "type": "streamable_http",
+      "url": "http://mainsail.local:7125",
+      "headers": {
+        "X-Api-Key": "${MOONRAKER_API_KEY}"
+      },
+      "execute_timeout": 60
+    },
+
+    "blender": {
+      "command": "blender",
+      "args": ["--background", "--python", "./mcp/blender-mcp/__init__.py"],
+      "env": {
+        "BLENDER_OUTPUT_DIR": "./output/blender"
+      },
+      "execute_timeout": 120
+    }
+  }
+}

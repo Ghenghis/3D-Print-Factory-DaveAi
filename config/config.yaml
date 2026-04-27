@@ -1,0 +1,126 @@
+# DaveAI Agent Configuration
+# Copy this to Mini-Agent config directory and customize
+
+# ===== LLM Configuration =====
+# MiniMax API - Highspeed 2.7
+api_key: "${MINIMAX_API_KEY}"
+api_base: "https://api.minimax.io"  # or https://api.minimaxi.com for China
+model: "MiniMax-M2.5"
+provider: "anthropic"
+
+# ===== Retry Configuration =====
+retry:
+  enabled: true
+  max_retries: 3
+  initial_delay: 1.0
+  max_delay: 60.0
+  exponential_base: 2.0
+
+# ===== Agent Configuration =====
+max_steps: 100
+workspace_dir: "./workspace"
+system_prompt_path: "system_prompt.md"
+
+# ===== Tools Configuration =====
+tools:
+  enable_file_tools: true
+  enable_bash: true
+  enable_note: true
+
+  # Skills
+  enable_skills: true
+  skills_dir: "./skills"
+
+  # MCP
+  enable_mcp: true
+  mcp_config_path: "mcp.json"
+
+  # MCP Timeouts
+  mcp:
+    connect_timeout: 10.0
+    execute_timeout: 300.0  # Longer for 3D generation
+    sse_read_timeout: 120.0
+
+# ===== DaveAI Specific =====
+daveai:
+  # 3D Generation
+  comfyui_url: "http://localhost:8188"
+  comfyui_timeout: 300
+
+  # Blender
+  blender_path: "blender"
+  blender_timeout: 120
+
+  # Moonraker/Klipper
+  moonraker_url: "http://mainsail.local:7125"
+  moonraker_api_key: "${MOONRAKER_API_KEY}"
+
+  # Fleet
+  fleet:
+    - name: "flsun_v400"
+      type: "delta"
+      host: "192.168.1.101"
+      best_for: ["miniatures", "speed"]
+
+    - name: "flsun_t1_1"
+      type: "delta"
+      host: "192.168.1.102"
+      best_for: ["balanced", "prototypes"]
+
+    - name: "flsun_t1_2"
+      type: "delta"
+      host: "192.168.1.103"
+      best_for: ["balanced", "prototypes"]
+
+    - name: "flsun_s1"
+      type: "delta"
+      host: "192.168.1.104"
+      best_for: ["general"]
+
+    - name: "flsun_super_racer"
+      type: "delta"
+      host: "192.168.1.105"
+      best_for: ["speed"]
+
+    - name: "flsun_qq_pro"
+      type: "delta"
+      host: "192.168.1.106"
+      best_for: ["compact"]
+
+    - name: "cr10s"
+      type: "cartesian"
+      host: "192.168.1.107"
+      best_for: ["large"]
+
+    - name: "cr6_max"
+      type: "cartesian"
+      host: "192.168.1.108"
+      best_for: ["large", "detailed"]
+
+    - name: "tronxy_d01"
+      type: "cartesian"
+      enclosure: true
+      host: "192.168.1.109"
+      best_for: ["abs", "engineering"]
+
+    - name: "tronxy_x5sa"
+      type: "cartesian"
+      host: "192.168.1.110"
+      best_for: ["xl"]
+
+    - name: "prusa_mk3s"
+      type: "cartesian"
+      host: "192.168.1.111"
+      best_for: ["precision", "quality"]
+
+    - name: "sovol_sv01"
+      type: "cartesian"
+      host: "192.168.1.112"
+      best_for: ["testing", "general"]
+
+  # Routing rules
+  routing:
+    default_thickness_mm: 2.5
+    miniatures_max_mm: 50
+    small_max_mm: 100
+    medium_max_mm: 200
