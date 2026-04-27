@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-04-27T01:29:27.382029+00:00",
+  "blender_exe": "C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe",
+  "blender_version": "Blender 3.6.5",
+  "loop_count": 1,
+  "results": [
+    {
+      "blender_exe": "C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe",
+      "returncode": 0,
+      "input": "output\\blender\\test_input.stl",
+      "output": "output\\blender\\test_repaired_0.stl",
+      "output_sha256": "772343f96005b5fb02c4830c73c77da8fcde9ea1738c46fe9b1ee3c8bc2d26a6",
+      "output_size_bytes": 284,
+      "vertex_count": 8,
+      "face_count": 4,
+      "success": true,
+      "error": null,
+      "loop_index": 0
+    }
+  ],
+  "all_passed": true,
+  "output_files": [
+    {
+      "file": "output\\blender\\test_input.stl",
+      "size_bytes": 501
+    },
+    {
+      "file": "output\\blender\\test_repaired_0.stl",
+      "size_bytes": 284
+    }
+  ],
+  "gate": "PASS"
+}

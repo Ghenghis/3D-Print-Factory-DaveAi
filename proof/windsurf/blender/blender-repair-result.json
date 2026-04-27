@@ -1,0 +1,9 @@
+{
+  "input": "output\\blender\\test_input.stl",
+  "output": "output\\blender\\test_repaired_0.stl",
+  "success": true,
+  "error": null,
+  "vertex_count": 8,
+  "face_count": 4,
+  "output_size_bytes": 284
+}

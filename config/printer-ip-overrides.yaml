@@ -1,0 +1,9 @@
+# DaveAI Printer IP Overrides
+# Auto-updated by network scanner.
+# These override the defaults in active-printers.yaml / idle-printers.yaml.
+
+ip_overrides:
+  flsun_s1: "192.168.0.12"
+  flsun_t1_1: "192.168.0.10"
+  flsun_t1_2: "192.168.0.11"
+  flsun_v400: "192.168.0.34"

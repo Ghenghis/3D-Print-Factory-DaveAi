@@ -1,0 +1,50 @@
+# DaveAI Active Printer Config
+# These 4 printers are ACTIVE_TESTABLE — can-online, have Moonraker
+# IPs are config defaults — override in config/printer-ip-overrides.yaml
+
+active_printers:
+  - name: "FLSUN V400"
+    key: "flsun_v400"
+    status: "ACTIVE_TESTABLE"
+    type: "delta"
+    host: "192.168.0.34"   # speeder-pad, Moonraker v0.10.0 — auto-discovered
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 300, y: 300, z: 410}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["miniatures", "speed"]
+
+  - name: "FLSUN T1 #1"
+    key: "flsun_t1_1"
+    status: "ACTIVE_TESTABLE"
+    type: "delta"
+    host: "192.168.0.10"   # FLSunT1, Moonraker 1.0.9.8 — auto-discovered
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 300, y: 300, z: 330}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["balanced", "prototypes"]
+
+  - name: "FLSUN T1 #2"
+    key: "flsun_t1_2"
+    status: "ACTIVE_TESTABLE"
+    type: "delta"
+    host: "192.168.0.11"  # FLSunT1 (second unit), Moonraker 1.0.9.8 — auto-discovered
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 300, y: 300, z: 330}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["balanced", "prototypes"]
+
+  - name: "FLSUN S1"
+    key: "flsun_s1"
+    status: "ONLINE_MAINTENANCE"
+    type: "delta"
+    host: "192.168.0.12"   # FLSunS1, Moonraker 1.0.8.9 — auto-discovered (MAINTENANCE)
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 320, y: 320, z: 430}
+    materials: ["PLA", "PETG", "TPU", "ABS"]
+    best_for: ["general"]
+    maintenance_note: "Hotend disassembled — connection/reachability test ONLY. Do NOT route jobs, heat, or move. Risk of hardware damage."
+    routing_allowed: false

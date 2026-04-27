@@ -1,0 +1,94 @@
+# DaveAI Idle Printer Config
+# These 8 printers are IDLE_NOT_ONLINE
+# Do NOT route real jobs to these printers.
+# Do NOT remove from config — they are part of the 12-printer fleet registry.
+
+idle_printers:
+  - name: "FLSUN QQ-S Pro"
+    key: "flsun_qq_pro"
+    status: "IDLE_NOT_ONLINE"
+    type: "delta"
+    host: "192.168.1.106"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 255, y: 255, z: 360}
+    materials: ["PLA", "PETG"]
+    best_for: ["compact"]
+
+  - name: "FLSUN Super Racer"
+    key: "flsun_super_racer"
+    status: "IDLE_NOT_ONLINE"
+    type: "delta"
+    host: "192.168.1.105"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 260, y: 260, z: 330}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["speed"]
+
+  - name: "Creality CR-10S"
+    key: "cr10s"
+    status: "IDLE_NOT_ONLINE"
+    type: "cartesian"
+    host: "192.168.1.107"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 300, y: 300, z: 400}
+    materials: ["PLA", "PETG", "ABS"]
+    best_for: ["large"]
+
+  - name: "Tronxy D01 Pro Enclosed"
+    key: "tronxy_d01"
+    status: "IDLE_NOT_ONLINE"
+    type: "cartesian"
+    host: "192.168.1.109"
+    moonraker_port: 7125
+    enclosure: true
+    build_volume_mm: {x: 220, y: 220, z: 220}
+    materials: ["PLA", "ABS", "ASA", "PC", "Nylon"]
+    best_for: ["abs", "engineering"]
+    note: "Only enclosed printer — required for ABS/ASA. Bring online for ABS routing."
+
+  - name: "Tronxy X5SA Pro"
+    key: "tronxy_x5sa"
+    status: "IDLE_NOT_ONLINE"
+    type: "cartesian"
+    host: "192.168.1.110"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 330, y: 330, z: 400}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["xl"]
+
+  - name: "Creality CR-6 Max"
+    key: "cr6_max"
+    status: "IDLE_NOT_ONLINE"
+    type: "cartesian"
+    host: "192.168.1.108"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 400, y: 400, z: 400}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["large", "detailed"]
+
+  - name: "Prusa MK3S"
+    key: "prusa_mk3s"
+    status: "IDLE_NOT_ONLINE"
+    type: "cartesian"
+    host: "192.168.1.111"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 250, y: 210, z: 210}
+    materials: ["PLA", "PETG", "ABS", "TPU"]
+    best_for: ["precision", "quality"]
+
+  - name: "Sovol SV-01"
+    key: "sovol_sv01"
+    status: "IDLE_NOT_ONLINE"
+    type: "cartesian"
+    host: "192.168.1.112"
+    moonraker_port: 7125
+    enclosure: false
+    build_volume_mm: {x: 280, y: 240, z: 300}
+    materials: ["PLA", "PETG", "TPU"]
+    best_for: ["testing", "general"]

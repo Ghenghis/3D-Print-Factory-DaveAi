@@ -1,0 +1,1 @@
+772343f96005b5fb02c4830c73c77da8fcde9ea1738c46fe9b1ee3c8bc2d26a6  output\blender\test_repaired_0.stl

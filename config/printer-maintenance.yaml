@@ -1,0 +1,55 @@
+# DaveAI Printer Maintenance Toggles
+# Set maintenance: true to put a printer into ONLINE_MAINTENANCE mode.
+# The agent reads this file at runtime — no restart required.
+# When maintenance: true, the printer is connection-tested only.
+# No jobs, no heat, no movement commands will be sent.
+
+maintenance:
+  flsun_v400:
+    enabled: false
+    reason: ""
+
+  flsun_t1_1:
+    enabled: false
+    reason: ""
+
+  flsun_t1_2:
+    enabled: false
+    reason: ""
+
+  flsun_s1:
+    enabled: true
+    reason: "Hotend disassembled — connection test only. Do not route jobs, heat, or move."
+
+  flsun_qq_pro:
+    enabled: false
+    reason: ""
+
+  flsun_super_racer:
+    enabled: false
+    reason: ""
+
+  cr10s:
+    enabled: false
+    reason: ""
+
+  tronxy_d01:
+    enabled: false
+    reason: ""
+
+  tronxy_x5sa:
+    enabled: false
+    reason: ""
+
+  cr6_max:
+    enabled: false
+    reason: ""
+
+  prusa_mk3s:
+    enabled: false
+    reason: ""
+
+  sovol_sv01:
+    enabled: false
+    reason: ""
+

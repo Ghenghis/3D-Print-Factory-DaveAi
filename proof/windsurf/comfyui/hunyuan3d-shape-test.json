@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-04-27T01:29:29.577991+00:00",
+  "comfyui_found": true,
+  "comfyui_running": false,
+  "hunyuan3d_shape_found": false,
+  "hunyuan3d_paint_found": false,
+  "shape_model_paths": [],
+  "paint_model_paths": [],
+  "gate": "BLOCKED",
+  "blocker": "BLOCKED_SERVICE \u2014 ComfyUI not running (start manually or via bootstrap)"
+}

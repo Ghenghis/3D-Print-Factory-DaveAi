@@ -1,0 +1,316 @@
+{
+  "timestamp": "2026-04-27T01:29:26.542737+00:00",
+  "test_count": 6,
+  "passed": 6,
+  "failed": 0,
+  "tests": [
+    {
+      "timestamp": "2026-04-27T01:29:26.493444+00:00",
+      "job": {
+        "material": "PLA",
+        "size_mm": {
+          "x": 50,
+          "y": 50,
+          "z": 50
+        },
+        "dry_run": true
+      },
+      "selected_printer": {
+        "name": "FLSUN V400",
+        "key": "flsun_v400",
+        "status": "ACTIVE_TESTABLE",
+        "build_volume_mm": {
+          "x": 300,
+          "y": 300,
+          "z": 410
+        }
+      },
+      "reason": "Selected FLSUN V400 \u2014 ACTIVE_TESTABLE, supports PLA, fits {'x': 50, 'y': 50, 'z': 50}",
+      "skipped_printers": [
+        {
+          "name": "FLSUN S1",
+          "reason": "ONLINE_MAINTENANCE \u2014 Hotend disassembled \u2014 connection test only. No jobs, no heat, no movement."
+        },
+        {
+          "name": "FLSUN QQ-S Pro",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "FLSUN Super Racer",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Creality CR-10S",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Tronxy D01 Pro Enclosed",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Tronxy X5SA Pro",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Creality CR-6 Max",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Prusa MK3S",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Sovol SV-01",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        }
+      ],
+      "blocked": false,
+      "block_reason": null,
+      "fleet_summary": {
+        "total": 12,
+        "active": 4,
+        "idle": 8
+      },
+      "test": "small_pla_routes_to_active",
+      "expected": "selected_printer is not None and not blocked",
+      "pass": true
+    },
+    {
+      "timestamp": "2026-04-27T01:29:26.523614+00:00",
+      "job": {
+        "material": "PLA",
+        "size_mm": {
+          "x": 500,
+          "y": 500,
+          "z": 500
+        },
+        "dry_run": true
+      },
+      "selected_printer": null,
+      "reason": "",
+      "skipped_printers": [],
+      "blocked": true,
+      "block_reason": "Impossible build volume: 500mm exceeds all printers",
+      "fleet_summary": {
+        "total": 12,
+        "active": 4,
+        "idle": 8
+      },
+      "test": "large_impossible_rejected",
+      "expected": "blocked=True (>450mm)",
+      "pass": true
+    },
+    {
+      "timestamp": "2026-04-27T01:29:26.523628+00:00",
+      "job": {
+        "material": "ABS",
+        "size_mm": {
+          "x": 100,
+          "y": 100,
+          "z": 100
+        },
+        "dry_run": true
+      },
+      "selected_printer": null,
+      "reason": "ABS requires enclosed printer. Tronxy D01 Pro Enclosed is IDLE_NOT_ONLINE. Will be routed when printer comes online.",
+      "skipped_printers": [
+        {
+          "name": "Tronxy D01 Pro Enclosed",
+          "reason": "IDLE_NOT_ONLINE"
+        }
+      ],
+      "blocked": true,
+      "block_reason": "BLOCKED_NO_ACTIVE_ENCLOSED_PRINTER",
+      "fleet_summary": {
+        "total": 12,
+        "active": 4,
+        "idle": 8
+      },
+      "test": "abs_requires_enclosure_blocked",
+      "expected": "blocked=True \u2014 BLOCKED_NO_ACTIVE_ENCLOSED_PRINTER",
+      "pass": true
+    },
+    {
+      "timestamp": "2026-04-27T01:29:26.523636+00:00",
+      "job": {
+        "material": "ASA",
+        "size_mm": {
+          "x": 80,
+          "y": 80,
+          "z": 80
+        },
+        "dry_run": true
+      },
+      "selected_printer": null,
+      "reason": "ASA requires enclosed printer. Tronxy D01 Pro Enclosed is IDLE_NOT_ONLINE. Will be routed when printer comes online.",
+      "skipped_printers": [
+        {
+          "name": "Tronxy D01 Pro Enclosed",
+          "reason": "IDLE_NOT_ONLINE"
+        }
+      ],
+      "blocked": true,
+      "block_reason": "BLOCKED_NO_ACTIVE_ENCLOSED_PRINTER",
+      "fleet_summary": {
+        "total": 12,
+        "active": 4,
+        "idle": 8
+      },
+      "test": "asa_requires_enclosure_blocked",
+      "expected": "blocked=True \u2014 BLOCKED_NO_ACTIVE_ENCLOSED_PRINTER",
+      "pass": true
+    },
+    {
+      "timestamp": "2026-04-27T01:29:26.523641+00:00",
+      "job": {
+        "material": "PLA",
+        "size_mm": {
+          "x": 50,
+          "y": 50,
+          "z": 50
+        },
+        "dry_run": true
+      },
+      "selected_printer": {
+        "name": "FLSUN V400",
+        "key": "flsun_v400",
+        "status": "ACTIVE_TESTABLE",
+        "build_volume_mm": {
+          "x": 300,
+          "y": 300,
+          "z": 410
+        }
+      },
+      "reason": "Selected FLSUN V400 \u2014 ACTIVE_TESTABLE, supports PLA, fits {'x': 50, 'y': 50, 'z': 50}",
+      "skipped_printers": [
+        {
+          "name": "FLSUN S1",
+          "reason": "ONLINE_MAINTENANCE \u2014 Hotend disassembled \u2014 connection test only. No jobs, no heat, no movement."
+        },
+        {
+          "name": "FLSUN QQ-S Pro",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "FLSUN Super Racer",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Creality CR-10S",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Tronxy D01 Pro Enclosed",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Tronxy X5SA Pro",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Creality CR-6 Max",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Prusa MK3S",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Sovol SV-01",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        }
+      ],
+      "blocked": false,
+      "block_reason": null,
+      "fleet_summary": {
+        "total": 12,
+        "active": 4,
+        "idle": 8
+      },
+      "test": "idle_printers_not_used",
+      "expected": "all idle printers in skipped list",
+      "pass": true
+    },
+    {
+      "timestamp": "2026-04-27T01:29:26.532007+00:00",
+      "job": {
+        "material": "PLA",
+        "size_mm": {
+          "x": 50,
+          "y": 50,
+          "z": 50
+        },
+        "dry_run": true
+      },
+      "selected_printer": {
+        "name": "FLSUN V400",
+        "key": "flsun_v400",
+        "status": "ACTIVE_TESTABLE",
+        "build_volume_mm": {
+          "x": 300,
+          "y": 300,
+          "z": 410
+        }
+      },
+      "reason": "Selected FLSUN V400 \u2014 ACTIVE_TESTABLE, supports PLA, fits {'x': 50, 'y': 50, 'z': 50}",
+      "skipped_printers": [
+        {
+          "name": "FLSUN S1",
+          "reason": "ONLINE_MAINTENANCE \u2014 Hotend disassembled \u2014 connection test only. No jobs, no heat, no movement."
+        },
+        {
+          "name": "FLSUN QQ-S Pro",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "FLSUN Super Racer",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Creality CR-10S",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Tronxy D01 Pro Enclosed",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Tronxy X5SA Pro",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Creality CR-6 Max",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Prusa MK3S",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        },
+        {
+          "name": "Sovol SV-01",
+          "reason": "IDLE_NOT_ONLINE \u2014 not used for real jobs"
+        }
+      ],
+      "blocked": false,
+      "block_reason": null,
+      "fleet_summary": {
+        "total": 12,
+        "active": 4,
+        "idle": 8
+      },
+      "test": "s1_maintenance_never_selected",
+      "expected": "FLSUN S1 in skipped list with ONLINE_MAINTENANCE reason, not selected",
+      "pass": true
+    }
+  ],
+  "fleet_config": {
+    "total": 12,
+    "active_testable": 3,
+    "online_maintenance": 1,
+    "idle": 8,
+    "maintenance_printers": [
+      "FLSUN S1 \u2014 hotend disassembled, connection test only"
+    ]
+  },
+  "gate": "PASS"
+}

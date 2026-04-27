@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-04-27T01:29:26.488261+00:00",
+  "dry_run_default": true,
+  "allow_real_print_default": false,
+  "can_start_print_before_approval": false,
+  "emergency_stop": {
+    "emergency_stop_available": true,
+    "method": "Moonraker POST /printer/emergency_stop",
+    "verified": true
+  },
+  "forbidden_operations_blocked": [
+    {
+      "operation": "flash_firmware",
+      "blocked": true
+    },
+    {
+      "operation": "overwrite_printer_cfg",
+      "blocked": true
+    },
+    {
+      "operation": "change_mcu_config",
+      "blocked": true
+    },
+    {
+      "operation": "start_real_print",
+      "blocked": true
+    },
+    {
+      "operation": "publish_secrets",
+      "blocked": true
+    },
+    {
+      "operation": "commit_tokens",
+      "blocked": true
+    }
+  ],
+  "gate": "PASS"
+}

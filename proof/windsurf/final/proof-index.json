@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-04-27T01:29:29.608640+00:00",
+  "total_proof_files": 21,
+  "required_files_present": 17,
+  "required_files_missing": 7,
+  "missing_files": [
+    "proof/windsurf/moonraker/printer-scan-results.json",
+    "proof/windsurf/moonraker/active-printer-status.json",
+    "proof/windsurf/moonraker/idle-printer-status.json",
+    "proof/windsurf/e2e/full-dryrun-report.md",
+    "proof/windsurf/memory/memory-loop.csv",
+    "proof/windsurf/final/WINDSURF_FINAL_VERDICT.md",
+    "proof/moonraker/fleet-scan-4active.json"
+  ],
+  "all_files": [
+    {
+      "path": "proof\\blender\\blender-e2e-test.json",
+      "size_bytes": 953,
+      "sha256": "7627623b487d091cfe20064c91fea528d3a749920085dbb2a940a002044fc299"
+    },
+    {
+      "path": "proof\\router\\router-validation.json",
+      "size_bytes": 9231,
+      "sha256": "44be6dd9b582ff2ab96c22439cd7e7bb90b746bac5be4b6120ef302bc3debb5a"
+    },
+    {
+      "path": "proof\\safety\\safety-gate-test.json",
+      "size_bytes": 842,
+      "sha256": "9aa37c16f9eadd0fd30b0041d236e8a84151cee9f844adf25234cb2a1e9261dd"
+    },
+    {
+      "path": "proof\\windsurf\\baseline\\git-status-before.txt",
+      "size_bytes": 215,
+      "sha256": "095aee8ea831919030dc816786edb987ee127f0eda73894ff6e9d072d4369719"
+    },
+    {
+      "path": "proof\\windsurf\\baseline\\MAXHERMES_PROOF_VERIFICATION.md",
+      "size_bytes": 1258,
+      "sha256": "1c95db7b30d75457c1800f56fa928dba17b6aaaae786b4b87bc91131225bae09"
+    },
+    {
+      "path": "proof\\windsurf\\blender\\blender-e2e-output.json",
+      "size_bytes": 953,
+      "sha256": "7627623b487d091cfe20064c91fea528d3a749920085dbb2a940a002044fc299"
+    },
+    {
+      "path": "proof\\windsurf\\blender\\blender-e2e-output.txt",
+      "size_bytes": 506,
+      "sha256": "e91c5cede325115231e84cc6f31d9b27e6aeffbbb248f2bd17d500daee9733bb"
+    },
+    {
+      "path": "proof\\windsurf\\blender\\blender-repair-result.json",
+      "size_bytes": 212,
+      "sha256": "916cc4996dc7b32b1b1a3c6739659c942f1518bb1dcd56b429938d893ff71fa5"
+    },
+    {
+      "path": "proof\\windsurf\\blender\\blender-version.txt",
+      "size_bytes": 13,
+      "sha256": "bfb9808b1bbd41601585bb57a5b0eb836db6052629e3dfbc1831177658b245bc"
+    },
+    {
+      "path": "proof\\windsurf\\blender\\output-files.txt",
+      "size_bytes": 89,
+      "sha256": "bc51c43ac3d9acf26938317395bee1506899663fdd2e804d87368dbaaa0f175b"
+    },
+    {
+      "path": "proof\\windsurf\\blender\\output-sha256.txt",
+      "size_bytes": 102,
+      "sha256": "9e1bb7f78065c85c7c01362014a2fea039b500537b4799efcac365038b843aa0"
+    },
+    {
+      "path": "proof\\windsurf\\comfyui\\comfyui-health.json",
+      "size_bytes": 206,
+      "sha256": "5e8ddb3ffc9bdc5eda01a29735d660da575e287cc2c4100d95b66ae67d664f9f"
+    },
+    {
+      "path": "proof\\windsurf\\comfyui\\comfyui-location.txt",
+      "size_bytes": 17,
+      "sha256": "1eec8fd42ca833a2a46f0ca55067651e0285f24eea1d927ebec0659f85db5407"
+    },
+    {
+      "path": "proof\\windsurf\\comfyui\\hunyuan3d-model-files.txt",
+      "size_bytes": 47,
+      "sha256": "25941cd8b58a1e99f83289243dbe39aa95e24d837c90e83349bb13513190fedd"
+    },
+    {
+      "path": "proof\\windsurf\\comfyui\\hunyuan3d-shape-test.json",
+      "size_bytes": 352,
+      "sha256": "f848fe3bbd01ba82d6f105fa823ee86a7116bbc026e343291c3eeb7004540c66"
+    },
+    {
+      "path": "proof\\windsurf\\comfyui\\vram-policy.md",
+      "size_bytes": 1054,
+      "sha256": "b9083d11580fb9ac49d3cecd6bc226e921514072b01a0bc1db6c67f357c8af27"
+    },
+    {
+      "path": "proof\\windsurf\\e2e\\no-print-started.txt",
+      "size_bytes": 81,
+      "sha256": "f09581219923db5e4a7c592597f8b1f2bd74ee34dee759c2262c089a06c5e69c"
+    },
+    {
+      "path": "proof\\windsurf\\env\\python-version.txt",
+      "size_bytes": 15,
+      "sha256": "af5e1687e041a2cd8181e7a214ee103c7bdf12b2376ee17b5103fb23fe833c67"
+    },
+    {
+      "path": "proof\\windsurf\\final\\proof-index.json",
+      "size_bytes": 8442,
+      "sha256": "5e6a42d20b1a0fb446108007fc89f0840fa7e92749ecd6d4190e7111ba168725"
+    },
+    {
+      "path": "proof\\windsurf\\router\\router-validation.json",
+      "size_bytes": 9231,
+      "sha256": "44be6dd9b582ff2ab96c22439cd7e7bb90b746bac5be4b6120ef302bc3debb5a"
+    },
+    {
+      "path": "proof\\windsurf\\safety\\safety-gate-test.json",
+      "size_bytes": 842,
+      "sha256": "9aa37c16f9eadd0fd30b0041d236e8a84151cee9f844adf25234cb2a1e9261dd"
+    }
+  ],
+  "required_check": [
+    {
+      "required": "proof/windsurf/baseline/MAXHERMES_PROOF_VERIFICATION.md",
+      "exists": true,
+      "sha256": "1c95db7b30d75457c1800f56fa928dba17b6aaaae786b4b87bc91131225bae09"
+    },
+    {
+      "required": "proof/windsurf/baseline/git-status-before.txt",
+      "exists": true,
+      "sha256": "095aee8ea831919030dc816786edb987ee127f0eda73894ff6e9d072d4369719"
+    },
+    {
+      "required": "proof/windsurf/env/python-version.txt",
+      "exists": true,
+      "sha256": "af5e1687e041a2cd8181e7a214ee103c7bdf12b2376ee17b5103fb23fe833c67"
+    },
+    {
+      "required": "proof/windsurf/blender/blender-version.txt",
+      "exists": true,
+      "sha256": "bfb9808b1bbd41601585bb57a5b0eb836db6052629e3dfbc1831177658b245bc"
+    },
+    {
+      "required": "proof/windsurf/blender/blender-e2e-output.txt",
+      "exists": true,
+      "sha256": "e91c5cede325115231e84cc6f31d9b27e6aeffbbb248f2bd17d500daee9733bb"
+    },
+    {
+      "required": "proof/windsurf/blender/output-sha256.txt",
+      "exists": true,
+      "sha256": "9e1bb7f78065c85c7c01362014a2fea039b500537b4799efcac365038b843aa0"
+    },
+    {
+      "required": "proof/windsurf/comfyui/comfyui-location.txt",
+      "exists": true,
+      "sha256": "1eec8fd42ca833a2a46f0ca55067651e0285f24eea1d927ebec0659f85db5407"
+    },
+    {
+      "required": "proof/windsurf/comfyui/comfyui-health.json",
+      "exists": true,
+      "sha256": "5e8ddb3ffc9bdc5eda01a29735d660da575e287cc2c4100d95b66ae67d664f9f"
+    },
+    {
+      "required": "proof/windsurf/comfyui/hunyuan3d-model-files.txt",
+      "exists": true,
+      "sha256": "25941cd8b58a1e99f83289243dbe39aa95e24d837c90e83349bb13513190fedd"
+    },
+    {
+      "required": "proof/windsurf/comfyui/hunyuan3d-shape-test.json",
+      "exists": true,
+      "sha256": "f848fe3bbd01ba82d6f105fa823ee86a7116bbc026e343291c3eeb7004540c66"
+    },
+    {
+      "required": "proof/windsurf/comfyui/vram-policy.md",
+      "exists": true,
+      "sha256": "b9083d11580fb9ac49d3cecd6bc226e921514072b01a0bc1db6c67f357c8af27"
+    },
+    {
+      "required": "proof/windsurf/moonraker/printer-scan-results.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "required": "proof/windsurf/moonraker/active-printer-status.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "required": "proof/windsurf/moonraker/idle-printer-status.json",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "required": "proof/windsurf/router/router-validation.json",
+      "exists": true,
+      "sha256": "44be6dd9b582ff2ab96c22439cd7e7bb90b746bac5be4b6120ef302bc3debb5a"
+    },
+    {
+      "required": "proof/windsurf/safety/safety-gate-test.json",
+      "exists": true,
+      "sha256": "9aa37c16f9eadd0fd30b0041d236e8a84151cee9f844adf25234cb2a1e9261dd"
+    },
+    {
+      "required": "proof/windsurf/e2e/full-dryrun-report.md",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "required": "proof/windsurf/e2e/no-print-started.txt",
+      "exists": true,
+      "sha256": "f09581219923db5e4a7c592597f8b1f2bd74ee34dee759c2262c089a06c5e69c"
+    },
+    {
+      "required": "proof/windsurf/memory/memory-loop.csv",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "required": "proof/windsurf/final/WINDSURF_FINAL_VERDICT.md",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "required": "proof/blender/blender-e2e-test.json",
+      "exists": true,
+      "sha256": "7627623b487d091cfe20064c91fea528d3a749920085dbb2a940a002044fc299"
+    },
+    {
+      "required": "proof/router/router-validation.json",
+      "exists": true,
+      "sha256": "44be6dd9b582ff2ab96c22439cd7e7bb90b746bac5be4b6120ef302bc3debb5a"
+    },
+    {
+      "required": "proof/safety/safety-gate-test.json",
+      "exists": true,
+      "sha256": "9aa37c16f9eadd0fd30b0041d236e8a84151cee9f844adf25234cb2a1e9261dd"
+    },
+    {
+      "required": "proof/moonraker/fleet-scan-4active.json",
+      "exists": false,
+      "sha256": null
+    }
+  ]
+}

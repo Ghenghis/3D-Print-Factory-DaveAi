@@ -1,0 +1,112 @@
+# DaveAI Local Agent Configuration
+# Used by local_agent/runner.py
+
+agent:
+  name: "DaveAI-LocalAgent"
+  version: "1.0.0"
+  api_port: 8799
+  api_host: "127.0.0.1"
+  log_level: "INFO"
+
+safety:
+  dry_run_only: true
+  allow_real_print: false
+  require_owner_approval: true
+
+blender:
+  search_paths:
+    - "C:\\Program Files\\Blender Foundation\\Blender 4.0\\blender.exe"
+    - "C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe"
+    - "C:\\Program Files\\Blender Foundation\\Blender\\blender.exe"
+    - "blender"
+  timeout_seconds: 120
+  output_dir: "output/blender"
+
+comfyui:
+  search_paths:
+    - "C:\\Users\\Admin\\Downloads\\ComfyUI"
+    - "C:\\Users\\Admin\\ComfyUI"
+    - "G:\\ComfyUI"
+    - "G:\\Github\\ComfyUI"
+  install_path: "C:\\Users\\Admin\\Downloads\\ComfyUI"
+  url: "http://localhost:8188"
+  timeout_seconds: 300
+
+hunyuan3d:
+  model_id: "tencent/Hunyuan3D-2.1"
+  shape_model: "Hunyuan3D-Shape-v2-1"
+  paint_model: "Hunyuan3D-Paint-v2-1"
+  vram_mode: "sequential"
+  gpu: "RTX 3090 Ti"
+  vram_gb: 24
+
+moonraker:
+  scan_subnets:
+    - "auto"
+    - "192.168.0.0/24"
+    - "192.168.1.0/24"
+    - "10.0.0.0/24"
+  ports: [7125, 80, 443, 8080]
+  timeout_seconds: 5
+  endpoints:
+    - "/server/info"
+    - "/printer/info"
+    - "/printer/objects/query?webhooks"
+
+fleet:
+  active_printers:
+    - name: "FLSUN V400"
+      key: "flsun_v400"
+      status: "ACTIVE_TESTABLE"
+      host: "192.168.0.34"      # speeder-pad, Moonraker v0.10.0 — auto-discovered
+    - name: "FLSUN T1 #1"
+      key: "flsun_t1_1"
+      status: "ACTIVE_TESTABLE"
+      host: "192.168.0.10"      # FLSunT1, Moonraker 1.0.9.8 — auto-discovered
+    - name: "FLSUN T1 #2"
+      key: "flsun_t1_2"
+      status: "ACTIVE_TESTABLE"
+      host: "192.168.0.11"      # FLSunT1 (unit 2), Moonraker 1.0.9.8 — auto-discovered
+    - name: "FLSUN S1"
+      key: "flsun_s1"
+      status: "ONLINE_MAINTENANCE"
+      maintenance_note: "Hotend disassembled — connection test only. Do NOT route jobs, heat, or move commands."
+      host: "192.168.0.12"      # FLSunS1, Moonraker 1.0.8.9 — MAINTENANCE MODE
+  idle_printers:
+    - name: "FLSUN QQ-S Pro"
+      key: "flsun_qq_pro"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.106"
+    - name: "FLSUN Super Racer"
+      key: "flsun_super_racer"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.105"
+    - name: "Creality CR-10S"
+      key: "cr10s"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.107"
+    - name: "Tronxy D01 Pro Enclosed"
+      key: "tronxy_d01"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.109"
+      enclosure: true
+    - name: "Tronxy X5SA Pro"
+      key: "tronxy_x5sa"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.110"
+    - name: "Creality CR-6 Max"
+      key: "cr6_max"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.108"
+    - name: "Prusa MK3S"
+      key: "prusa_mk3s"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.111"
+    - name: "Sovol SV-01"
+      key: "sovol_sv01"
+      status: "IDLE_NOT_ONLINE"
+      host: "192.168.1.112"
+
+proof:
+  output_dir: "proof/windsurf"
+  task_history_file: "proof/windsurf/local-agent/task-history.jsonl"
