@@ -44,8 +44,10 @@ HUNYUAN3D_SHAPE_NAMES = [
     "hy3dgen",
 ]
 HUNYUAN3D_PAINT_NAMES = [
-    "hunyuan3d-paint-v2-1",   # 2.1 paint — PRIMARY
-    "hunyuan3d-paint-v2-0",   # 2.0 fallback
+    "hunyuan3d-paintpbr-v2-1", # 2.1 PBR paint — PRIMARY (physically-based rendering)
+    "hunyuan3d-vae-v2-1",      # 2.1 VAE — required for mesh decoding
+    "hunyuan3d-paint-v2-1",
+    "hunyuan3d-paint-v2-0",    # 2.0 fallback
     "Hunyuan3D-Paint-v2-1",
 ]
 
